@@ -21,7 +21,18 @@ def get_reviews(place_id):
     if not place:
         abort(404)
 
-    reviews = [review.to_dict() for review in place.reviews]
+    #reviews = [review.to_dict() for review in place.reviews]
+
+    reviews = []
+
+    for review in place.reviews:
+        review_dict = review.to_dict()
+        user = review.user
+        if user:
+            review_dict['user'] = user.to_dict()
+        else:
+            review_dict['user'] = None
+        reviews.append(review_dict)
 
     return jsonify(reviews)
 

@@ -150,15 +150,22 @@ EOF  all  create  destroy  help  quit  show  update
 (hbnb) quit
 ```
 
+## Front-end Server
+```
+HBNB_MYSQL_USER=hbnb_dev HBNB_MYSQL_PWD=hbnb_dev_pwd HBNB_MYSQL_HOST=localhost HBNB_MYSQL_DB=hbnb_dev_db HBNB_TYPE_STORAGE=db python3 -m web_dynamic.101-hbnb
+```
+
+## Back-end Server
+```
+HBNB_MYSQL_USER=hbnb_dev HBNB_MYSQL_PWD=hbnb_dev_pwd HBNB_MYSQL_HOST=localhost HBNB_MYSQL_DB=hbnb_dev_db HBNB_TYPE_STORAGE=db HBNB_API_PORT=5001 python3 -m api.v1.app
+```
+
 ## Bugs
 No known bugs at this time. 
 
 ## Authors
-Alexa Orrico - [Github](https://github.com/alexaorrico) / [Twitter](https://twitter.com/alexa_orrico)  
-Jennifer Huang - [Github](https://github.com/jhuang10123) / [Twitter](https://twitter.com/earthtojhuang)  
-Jhoan Zamora - [Github](https://github.com/jzamora5) / [Twitter](https://twitter.com/JhoanZamora10)  
-David Ovalle - [Github](https://github.com/Nukemenonai) / [Twitter](https://twitter.com/disartDave)
+Fredrick Mbanga - [Github](https://github.com/fred-mba/) / [email](fredrickmbangah68@gmail.com)  
+Noel Reeds - [Github](https://github.com/noel-reeds) / [email](noelreeds@gmail.com)  
 
-Second part of Airbnb: Joann Vuong
 ## License
 Public Domain. No copy write protection. 
